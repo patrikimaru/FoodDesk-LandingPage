@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9576dda98d.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="https://fooddesk.dexignlab.com/react/demo/static/media/pic-5.7dba4fa4b2b813e643ad.jpg">
+  <link rel="stylesheet" href="style.css">
+  <title>FoodDesk | Patrick Diesta</title>
+</head>
+<body>
+  <header>
+    <section>
+      <div class="logo">
+        <i class="fa-solid fa-burger"></i>
+        FoodDesk
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="What do you want to eat today?">
+      </div>
+    </section>
+    <div class="profile-card"> 
+      <div class="user-img">
+        <img src="https://patrick-diesta.vercel.app/_next/image?url=%2Fprofile.png&w=384&q=75" alt="profile">
+      </div>
+      Patrick Diesta
+    </div>
+  </header>
+ <main>
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-credit-card"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <section class="main-section">
+    <section class="content">
+      <div class="img-container">
+        <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-4.3bf12b6c16e4ffe32cec.jpg" alt="banner">
+      </div>
+      <section class="category">
+        <h1>Category</h1>
+        <div class="cat row">
+          <div>
+            <i class="fa-solid fa-burger"></i>
+            Burger
+          </div>
+          <div>
+            <i class="fa-solid fa-mug-hot"></i>
+            Beverage
+          </div>
+          <div>
+            <i class="fa-solid fa-drumstick-bite"></i>
+            Chicken
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <h1>Popular Dishes</h1>
+        <div class="pop row">
+          <div>
+            <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-1.77e1f6929495d6e6ebc7.jpg" alt="fish burger">
+            Fish Burger
+            <h1>$5.59</h1>
+            <button type="submit" class="primary-btn">+ Add to Cart</button>
+          </div>
+          <div>
+            <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-2.dcae5a9123531ef55436.jpg" alt="beef burger">
+            Beef Burger
+            <h1>$5.59</h1>
+            <button type="submit" class="primary-btn">+ Add to Cart</button>
+          </div>
+          <div>
+            <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-3.b5b23dc087a14533c898.jpg" alt="cheese burger">
+            Cheese Burger
+            <h1>$5.59</h1>
+            <button type="submit" class="primary-btn">+ Add to Cart</button>
+          </div>
+        </div>
+      </section>
+      <section class="recent">
+        <h1>Recent Order</h1>
+        <div class="rec row">
+          <div>
+            <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-1.77e1f6929495d6e6ebc7.jpg" alt="fish burger">
+            Fish Burger
+            <h1>$5.59</h1>
+            <p>📍 4.97km | 🕚 21 min</p>
+          </div>
+          <div>
+            <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-2.dcae5a9123531ef55436.jpg" alt="beef burger">
+            Beef Burger
+            <h1>$5.59</h1>
+            <p>📍 4.97km | 🕚 21 min</p>
+          </div>
+          <div>
+            <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-3.b5b23dc087a14533c898.jpg" alt="cheese burger">
+            Cheese Burger
+            <h1>$5.59</h1>
+            <p>📍 4.97km | 🕚 21 min</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="balance">
+        <h1>Your Balance</h1>
+        <div class="card">
+          <h2>Balance</h2>
+          <h1>$12,000</h1>
+         <div class="button-row">
+          <button type="submit" class="secondary-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+            Top Up
+          </button>
+          <button type="submit" class="secondary-btn">
+            <i class="fa-solid fa-arrow-down"></i>
+            Transfer
+          </button>
+         </div>
+        </div>
+      </section>
+      <section class="address">
+        <h3>Your Address</h3>
+        <div class="address-row">
+          <h1>Elm Street, 23</h1>
+          <button type="submit" class="outline-btn">Change</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vero culpa</p>
+        <div class="button-row">
+          <button type="submit" class="primary-btn">Add Details</button>
+          <button type="submit" class="primary-btn">Add Note</button>
+        </div>
+      </section>
+      <section class="cart">
+        <div class="cart-col">
+          <div class="cart-item">
+            <div class="cart-img">
+              <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-1.0a21631e6947499af364.jpg" alt="pepperoni pizza">
+            </div>
+            <div class="cart-content">
+              <div class="cart-row">
+                <h4>Pepperoni Pizza</h4>
+                <h1>+$5.59</h1>
+              </div>
+              
+              <div class="cart-row">
+                <p>x1</p>
+                <input type="number" min="1" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-img">
+              <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-1.77e1f6929495d6e6ebc7.jpg" alt="fish burger">
+            </div>
+            <div class="cart-content">
+              <div class="cart-row">
+                <h4>Fish Burger</h4>
+                <h1>+$5.59</h1>
+              </div>
+              
+              <div class="cart-row">
+                <p>x1</p>
+                <input type="number" min="1" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-img">
+              <img src="https://fooddesk.dexignlab.com/react/demo/static/media/pic-3.b5b23dc087a14533c898.jpg" alt="cheese burger">
+            </div>
+            <div class="cart-content">
+              <div class="cart-row">
+                <h4>Cheese Burger</h4>
+                <h1>+$5.59</h1>
+              </div>
+              
+              <div class="cart-row">
+                <p>x1</p>
+                <input type="number" min="1" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bill">
+        <br />
+        <hr />
+        <div>
+          <h4>service</h4>
+          <h3>+$1.00</h3>
+        </div>
+        <div>
+          <h2>Total</h2>
+          <h1>$17.77.00</h1>
+        </div>
+        <button type="submit" class="primary-btn">Checkout</button>
+      </section>
+    </section>
+  </section>
+ </main>
+</body>
+</html>

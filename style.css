@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #FFA500;
+  --secondary-color: #585858;
+}
+body {
+  background-color: var(--primary-color);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+}
+
+header section {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.user-img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+
+ input[type=text]{
+  width: 400px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type=number]{
+  width: 50px;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 12px;
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.main-section{
+  display: flex;
+  margin-left: 25px;
+}
+
+main a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+main a:hover, .active {
+  color: var(--primary-color);
+}
+main aside{
+  background-color: white;
+  position: fixed;
+  height: 100%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+nav {
+  height: 100%;
+  background-color: white;
+  padding: 8px;
+}
+
+.content{
+  width: 100%;
+  padding: 0 20px;
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cat div{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.cat div i{
+  font-size: 40px;
+}
+
+.popular, .recent {
+  margin-top: 12px;
+}
+.pop div{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.pop-container{
+  border: none;
+  width: 100%;
+  max-height: 240px;
+}
+
+.rec div{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.row{
+  margin-top: 12px;
+  display: flex;
+  gap: 20px;
+}
+.row div:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.card {
+  padding: 30px 20px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  
+}
+.card h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.card h1{
+  font-size: 40px;
+  font-weight: bolder;
+}
+.button-row{
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  max-width: 250px;
+}
+button:hover{
+  opacity: 90%;
+}
+.outline-btn{
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 5px 5px;
+}
+
+.outline-btn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+.secondary-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 13px 12px 15px;
+}
+
+.primary-btn{
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 15px;
+}
+.address{
+  margin-top: 20px;
+}
+.address p {
+  max-width: 500px;
+}
+
+.address-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.cart-item{
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+.cart-img{
+  width: 80px;
+  height: 80px;
+}
+
+.cart-content{
+  width: 100%;
+}
+
+.bill div, .cart-row {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 700px) {
+  input[type=text]{
+    width: 200px;
+  }
+  nav{
+    padding: 0 8px 0 0;
+  }
+  .content{
+    padding: 0;
+  }
+  .main-section{
+    flex-direction: column;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+  input[type=text]{
+    display: none;
+  }
+  .pop div, .rec div {
+    padding: 0;
+  }
+}
